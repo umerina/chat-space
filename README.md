@@ -13,6 +13,7 @@ Things you may want to cover:
 
 * Database creation
 
+add-db-design
 # chat-space DB設計
 
 ## usersテーブル
@@ -58,6 +59,8 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :group
 
+
+master
 * Database initialization
 
 * How to run the test suite
