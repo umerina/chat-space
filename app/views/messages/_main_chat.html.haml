@@ -1,0 +1,37 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left
+      .group-name
+        tech
+      .member-list
+        .member-list__indication
+          member:
+        .member-list__name
+          ume
+    .chat-main__group-info__right
+      = link_to 'edit', class: "chat-main__group-info__right__edit" do
+        Edit
+
+
+  .chat-main__post-list
+    .list-block
+      .info
+        .info__name
+          ume
+        .info__date
+          2020/02/24
+    .list-message
+      type-meesage
+
+  .chat-main__post-form
+    .post-form
+      .post-box
+        .post-box__text
+          type a message
+        .post-box__icon
+          = icon('far fa-image',  class: "icon")
+        .icon-file      
+      .submit
+        Send type = "submit" name = "commit" value = "send" 
+        
+        
