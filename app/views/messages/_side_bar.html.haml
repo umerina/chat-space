@@ -2,16 +2,26 @@
   .side-bar__user-name
     .side-box
       .side-box__user-login
-        ume
+        = current_user.name
       .side-box__contents
         .contents__left
         = link_to "#", class: "contents-left" do
           = icon('far fa-edit',  class: "contents-left")
         .contents__right
-        = link_to "#", class: "contents-right" do
+        = link_to edit_user_path(current_user) do
           = icon('fas fa-cog',  class: "contents-right")
 
   .side-bar__group-list
+    .group-block
+      .group-block__name
+        techcamp
+      .group-block__text
+        no text
+    .group-block
+      .group-block__name
+        techcamp
+      .group-block__text
+        no text
     .group-block
       .group-block__name
         techcamp
