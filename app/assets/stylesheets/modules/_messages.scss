@@ -45,10 +45,15 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    .group-block { 
+    text-decoration: none;
+
+
+    .group-block {
       padding: 20px;
-      
-    
+      a {
+        text-decoration: none;
+        color:white;
+      }
       &__name {
         font-size: 15px;
         margin: 0px 0px 5px;
@@ -111,20 +116,19 @@
     }
   }
 
-  &__post-list {
+  &__message-list {
     background-color: #fafafa;
     height: calc(100vh - 190px);
     color: #333333;
     padding: 40px;
   
-    .list-block {
-      .info {
+    .message{
+      .upper-message{
         display: flex;
-
         &__name {
           margin-bottom: 12px; 
           font-size: 16px;
-          color: #333333; 
+          color: #434A54; 
           font-weight: bold;
         }
         &__date {
@@ -134,44 +138,57 @@
         }
       }
     }
-    .list-message {
+    .lower-message {
         border-top: 15px;
-        margin-bottom: 46px;
+        margin-bottom: 40px;
         font-size: 14px;
         color: #434A54;
       }
-    
-  }
+    }
   
-  &__post-form {
+  &__message-form {
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-  
-    .post-form {
-      display: flex;
-      .post-box { 
-        display: flex;
-        width: 100%;
-        position: relative;
-        &__text {
-          background-color: #ffffff;
-          height: 50px;
-          width: 100%;
-          border-style: none;
-          padding: 0 40px 0 10px;
-          line-height: 50px;
-          color: #434a54;
 
-        }
-        &__icon {
+    .new_message {
+      display: flex;
+
+      .message-text {
+        background-color: #ffffff;
+        height: 50px;
+        width: 100%;
+        border-style: none;
+        padding: 0 40px 0 10px;
+        line-height: 50px;
+        color: #434a54;
+      }
+      .message-box { 
+        // width: 100%;
+        position: relative;
+        // &__text {
+        //   background-color: #ffffff;
+        //   height: 50px;
+        //   width: 100%;
+        //   border-style: none;
+        //   padding: 0 40px 0 10px;
+        //   line-height: 50px;
+        //   color: #434a54;
+        // }
+        .text {
           top: 10px;
           right: 10px;
           font-size: 1.3rem;
           cursor: pointer;
           position: absolute;
         }
-
+        // &__icon {
+        //   top: 10px;
+        //   right: 10px;
+        //   font-size: 1.3rem;
+        //   cursor: pointer;
+        //   position: absolute;
+        // }
           .icon-file {
           display: none;
         }
