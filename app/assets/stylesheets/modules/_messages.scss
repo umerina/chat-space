@@ -5,7 +5,7 @@
 .wrapper  {
   display: flex;
   height:100vh;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .side-bar {
@@ -46,6 +46,7 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     text-decoration: none;
+    overflow: scroll;
 
 
     .group-block {
@@ -121,6 +122,7 @@
     height: calc(100vh - 190px);
     color: #333333;
     padding: 40px;
+    overflow: scroll;
   
     .message{
       .upper-message{
