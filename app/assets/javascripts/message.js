@@ -5,7 +5,7 @@ $(function(){
       `<div class="message">
          <div class="upper-message">
            <div class="upper-message__name">
-             ${message.name}
+             ${message.user_name}
            </div>
            <div class="upper-message__date">
              ${message.created_at}
@@ -24,7 +24,7 @@ $(function(){
       `<div class="message">
          <div class="upper-message">
            <div class="upper-message__name">
-             ${message.name}
+             ${message.user_name}
            </div>
            <div class="upper-message__date">
              ${message.created_at}
@@ -53,8 +53,9 @@ $('#new_message').on('submit', function(e){
  })
   .done(function(data){
     var html = buildHTML(data);
-    $('.messages').append(html);      
+    $('.chat-main__message-list').append(html);      
     $('form')[0].reset();
+    $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
   })
 })
 });
