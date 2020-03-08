@@ -26,3 +26,5 @@
 public/uploads/*
 
 directory
+
+config/secrets.yml
